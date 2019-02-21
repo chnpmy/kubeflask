@@ -22,5 +22,5 @@ webserver:
 
   service:
     type: ClusterIP
-    port: 5000
-    containerPort: 5000
+    internalPort: 5000
+    externalPort: 5000
