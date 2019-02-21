@@ -6,21 +6,7 @@ image:
   repository: chnpmy/kubeflask
   tag: 0.1.0
   pullPolicy: IfNotPresent
-webserver:
-  enabled: true
-  replicaCount: 1
-  extraEnv:
-    APP_ROLE: webserver
-
-  resources:
-    limits:
-      cpu: 100m
-      memory: 128Mi
-    requests:
-      cpu: 100m
-      memory: 128Mi
-
-  service:
-    type: ClusterIP
-    internalPort: 5000
-    externalPort: 5000
+service:
+  type: ClusterIP
+  internalPort: 5000
+  externalPort: 5000
